@@ -1,0 +1,23 @@
+{
+  "name": "urban-palm-tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --coverage-reporter=json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drazisil-codecov/urban-palm-tree.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drazisil-codecov/urban-palm-tree/issues"
+  },
+  "homepage": "https://github.com/drazisil-codecov/urban-palm-tree#readme",
+  "dependencies": {
+    "jest": "^28.1.3"
+  }
+}
