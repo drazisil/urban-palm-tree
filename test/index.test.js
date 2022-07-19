@@ -1,8 +1,8 @@
-const assert = require("assert")
+import { equal } from "assert"
 
-const { main } = require("../src/index.js")
+import { main } from "../src/index.js"
 
 
 it("Should return some coverage", function() {
-    assert.equal(main(), true)
+    equal(main(), true)
 })

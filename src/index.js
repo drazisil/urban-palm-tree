@@ -1,4 +1,4 @@
-module.exports.main = function() {
+export function main() {
     const A1 = true
     const B2 = false
     const C3 = true

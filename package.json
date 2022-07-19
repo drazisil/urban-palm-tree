@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest --coverage --coverage-reporter=json"
+    "test": "nyc --use-spawn-wrap -a mocha test/index.test.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,10 @@
   },
   "homepage": "https://github.com/drazisil-codecov/urban-palm-tree#readme",
   "dependencies": {
-    "jest": "^28.1.3"
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "reporters": ["text", "xml","html"]
   }
 }
