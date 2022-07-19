@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "nyc --use-spawn-wrap -a mocha test/index.test.js"
+    "test": "ts-node --esm node_modules/.bin/mocha test/index.test.ts"
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,20 @@
   },
   "homepage": "https://github.com/drazisil-codecov/urban-palm-tree#readme",
   "dependencies": {
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.0.6",
     "mocha": "^10.0.0",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "ts-node": "^10.9.1"
   },
   "nyc": {
-    "reporters": ["text", "xml","html"]
+    "reporters": [
+      "text",
+      "xml",
+      "html"
+    ]
+  },
+  "volta": {
+    "node": "18.6.0"
   }
 }
